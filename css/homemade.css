@@ -1,0 +1,51 @@
+a {
+	color:#999;
+	text-decoration:none;
+}
+
+footer {
+	color: #666;
+	margin:0 auto;
+	width:100%;
+}
+
+nav {
+	margin:0 auto;
+	width:100%;
+}
+
+h1 {
+	font-size:24px;
+	vertical-align:middle;
+	width:100%;
+	color:#000;
+	display:inline;
+}
+
+h2 {
+	font-size:18px;
+	color:#222;
+	display:inline;
+}
+
+h1, h2 {
+	margin:0;
+	padding:0 10px;
+}
+
+ol#posts {
+	margin:0;
+	padding:0;
+}
+
+li.story {
+	vertical-align:middle;
+	height:60px;
+	background: #ff8800 url(../gloss.png) repeat-x;
+	border-bottom:1px solid #bbb;
+}
+
+body {
+	background-color:#222;
+	font-family: helvetica, arial, sans-serif;
+}

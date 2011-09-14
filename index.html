@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Hi</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/homemade.css" type="text/css" media="screen" />
+	<script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<ol id = "posts">
+	<script type="text/Javascript">
+	$(document).ready(function(){
+		$.getJSON('http://api.ihackernews.com/page?format=jsonp&callback=?', function(data){
+			for (i=0;i<30;i++){
+			$('ol#posts').append('<li class="story"><a href="' + data.items[i].url + '"><h1>' + data.items[i].title + "</h1></a><a href='http://news.ycombinator.com/item?id="+data.items[i].points+"'><h2>comments</h2></a></li>");
+			}
+		});
+	});
+	</script>
+</ol>
+<footer>
+	&copy; <a href="ycombinator.com">ycombinator</a>, wrapped by <a href="twitter.com/mlaugharn">@mlaugharn</a>
+</footer>
+
+</body>
+
+</html>
